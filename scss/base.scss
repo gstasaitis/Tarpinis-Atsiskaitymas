@@ -26,7 +26,16 @@ header {
     background: $blue;
     display: flex;
     align-items: center;
+    transition: .3s ease;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+    
 }
+
+
+
 
 main{
     height: 450px;
@@ -43,6 +52,7 @@ main{
 
     h1{
         font-size: 30px;
+        text-align: justify;
     }
 }
 
@@ -82,7 +92,7 @@ section:hover::before{
     flex-direction: column;
 }
 .email{
-    padding: 20px;
+    padding-top: 20px;
     display: flex;
     align-items: left;
     justify-content: left;
@@ -106,6 +116,7 @@ button{
     display: inline-block;
     text-decoration: none;
     border: none;
+    cursor: pointer;
     border-radius: 5px;
     height: 30px;
     width: 100px;
@@ -115,7 +126,14 @@ button{
     align-items: center;
     justify-content: center;
     position: absolute; 
+    transition: .3s ease-in-out;
     // position: relative; ON MOBILE
+    &:hover{
+        background: rgba(30, 30, 248, 0.418);
+        font-size: 15px;
+    }
+
+
 }
 
 content{
@@ -143,6 +161,11 @@ content .container{
     height: auto;
     display: block;
     flex-wrap: wrap;
+    transition: .3s ease-in-out;
+
+    &:hover{
+        transform: scale(1.2);
+    }
 }
 
 
@@ -172,6 +195,10 @@ section{
     display: flex;
     flex-wrap: wrap;
     background: white;
+}
+
+h2{
+    font-size: 20px;
 }
 
 
@@ -238,7 +265,6 @@ h7{
     justify-content: baseline;
     position: relative;
     flex-direction: row;
-
 }
 
 .pic{
@@ -249,6 +275,12 @@ h7{
     display: block;
     justify-content: center;
     align-items: center;
+    transition: .3s ease-in-out;
+      
+     &:hover{
+        transform: scale(1.2);
+    }
+
 }
 
 .margaret{
