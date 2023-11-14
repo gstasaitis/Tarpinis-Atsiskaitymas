@@ -34,6 +34,21 @@ content .bar{
     display: block;
     margin: 0 auto;
 }
+content div.bar{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+content .container i {
+    color: $blue;
+    font-size: 45px;
+}
+
 
 content, h5, p{
     padding-top: 15px;
