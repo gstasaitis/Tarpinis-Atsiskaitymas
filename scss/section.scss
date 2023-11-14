@@ -1,0 +1,37 @@
+section{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+}
+
+h2{
+    font-size: 20px;
+}
+
+
+.section-2{
+    background: $iphone;
+    background-size:cover;
+    background-position:center;
+}
+
+.section-3{
+    background: $programing;
+    background-size:cover;
+    background-position:center;
+}
+
+.section-6{
+    background: $kid;
+    background-size:cover;
+    background-position:center;
+}
+
+.section-1,.section-2,.section-3,.section-4,.section-5,.section-6 {
+    margin:auto;
+    height: 400px;
+    width: 50%;
+    margin: auto;
+    padding: 50px;
+}

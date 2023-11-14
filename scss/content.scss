@@ -1,0 +1,50 @@
+content{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: row;
+}
+
+.container h5{
+    text-align: center;
+}
+.container p{
+    text-align: center;
+}
+
+content .container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    width: 30%;
+    height: auto;
+    display: block;
+    flex-wrap: wrap;
+    transition: .3s ease-in-out;
+
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+content .bar{
+    display: block;
+    margin: 0 auto;
+}
+
+content, h5, p{
+    padding-top: 15px;
+    text-align: left;
+}
+
+p{
+    font-size: smaller;
+    opacity: 0.8;
+}
+
+h5{
+    font-size: 20px;
+}

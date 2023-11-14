@@ -1,0 +1,93 @@
+main{
+    height: 450px;
+    background: $background-img;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    position: relative;
+    display: inline-block;
+    flex-direction: column;
+
+    h1{
+        font-size: 30px;
+        text-align: justify;
+    }
+}
+
+main::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    background: #000000;
+    opacity: 0.2;
+    transition: .3s;
+}
+
+section:hover::before{
+    opacity: 0;
+}
+
+.content{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 60%;
+    width: 60%;
+    height: 100%;
+}
+
+.align{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.email{
+    padding-top: 20px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+input{
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    height: 30px;
+    width: 330px;
+}
+
+form{
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    color: white;
+    background: $blue;
+    margin-left: 5px;
+    align-items: center;
+    justify-content: center;
+    position: absolute; 
+    transition: .3s ease-in-out;
+
+    &:hover{
+        background: rgba(30, 30, 248, 0.418);
+        font-size: 15px;
+    }
+}
